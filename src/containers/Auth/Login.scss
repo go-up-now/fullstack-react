@@ -1,0 +1,97 @@
+@import "../../styles/common.scss";
+
+.login-wrapper {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-family: "work sans";
+    display: flex;
+    // text-align: center;
+    justify-items: center;
+
+    .form {
+        width: 30%;
+        height: 550px;
+        margin: auto;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+
+        .title {
+            font-size: xx-large;
+            font-weight: 600;
+            font-family: 'open sans', sans-serif;
+            padding: 2rem 0;
+            margin: 0;
+        }
+
+        .form-group {
+            margin: 0 30px;
+
+            label {
+                font-size: 1.2rem;
+            }
+
+            .form-password {
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 40px;
+                    right: 15px;
+                    cursor: pointer;
+                }
+            }
+
+            input {
+                margin-bottom: 1rem;
+                box-sizing: border-box;
+                border: none;
+                font-size: 1.3rem;
+                padding-left: 1.5rem;
+                padding-bottom: 1rem;
+                box-shadow: inset 0px -3px 0px 0px rgba(187, 187, 187, 0.2);
+                transition: box-shadow 0.2s ease-in;
+            }
+
+            .btn-login {
+                border-radius: 25px;
+                margin: 1rem 0;
+                height: 40px;
+                font-size: 1.3rem;
+                color: white;
+                font-weight: 700;
+                background: rgb(34, 193, 195);
+                background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+                border: 0px;
+                cursor: pointer;
+                transition: opacity 0.25s ease-out;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            .icon {
+                text-align: center;
+                font-size: 30px;
+                margin: 1rem 0;
+
+                i {
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    color: #FFFFFF;
+                }
+
+                .google {
+                    background-color: rgb(235, 23, 23);
+                    margin-right: 10px;
+                }
+
+                .facebook {
+                    background-color: #0866ff;
+                }
+            }
+        }
+    }
+}
